@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mama's Pasta</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body class="pasta-theme">
+  <header>
+        <h1>Mama's Pasta</h1>
+        <p>Authentic Italian pasta dishes.</p>
+    </header>
+    <main>
+      <section class="feed"></section>
+      <section class="cart"></section>
+      <section class="payment-modal" id="paymentModal">
+          <div class="modal-content">
+              <button class="close-modal-btn" id="closeModalBtn">×</button>
+              <h2>Enter card details</h2>
+              <form id="paymentForm">
+                  <input type="text" placeholder="Enter your name" required>
+                  <input type="text" placeholder="Enter card number" required>
+                  <input type="text" placeholder="Enter CVV" required>
+                  <button type="submit">Pay</button>
+              </form>
+          </div>
+      </section>
+      <section class="confirmation-message" id="confirmationMessage">
+          <p>Thanks, <span id="customerName"></span>! Your order is on its way!</p>
+      </section>
+  </main>
+  <script src="index.js" type="module"></script>
+</body>
+</html>
